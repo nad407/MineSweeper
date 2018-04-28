@@ -1,0 +1,11 @@
+C:\Users\Schools_home\source\repos\MineSweeper\MineSweeper\obj\Debug\netcoreapp2.0\MineSweeper.csprojResolveAssemblyReference.cache
+C:\Users\Schools_home\source\repos\MineSweeper\MineSweeper\obj\Debug\netcoreapp2.0\MineSweeper.csproj.CoreCompileInputs.cache
+C:\Users\Schools_home\source\repos\MineSweeper\MineSweeper\obj\Debug\netcoreapp2.0\MineSweeper.AssemblyInfoInputs.cache
+C:\Users\Schools_home\source\repos\MineSweeper\MineSweeper\obj\Debug\netcoreapp2.0\MineSweeper.AssemblyInfo.cs
+C:\Users\Schools_home\source\repos\MineSweeper\MineSweeper\bin\Debug\netcoreapp2.0\MineSweeper.deps.json
+C:\Users\Schools_home\source\repos\MineSweeper\MineSweeper\bin\Debug\netcoreapp2.0\MineSweeper.runtimeconfig.json
+C:\Users\Schools_home\source\repos\MineSweeper\MineSweeper\bin\Debug\netcoreapp2.0\MineSweeper.runtimeconfig.dev.json
+C:\Users\Schools_home\source\repos\MineSweeper\MineSweeper\bin\Debug\netcoreapp2.0\MineSweeper.dll
+C:\Users\Schools_home\source\repos\MineSweeper\MineSweeper\bin\Debug\netcoreapp2.0\MineSweeper.pdb
+C:\Users\Schools_home\source\repos\MineSweeper\MineSweeper\obj\Debug\netcoreapp2.0\MineSweeper.dll
+C:\Users\Schools_home\source\repos\MineSweeper\MineSweeper\obj\Debug\netcoreapp2.0\MineSweeper.pdb
