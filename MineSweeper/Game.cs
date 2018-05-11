@@ -28,34 +28,49 @@ namespace MineSweeper
                 Console.Write("Columns: ");
                 c = Convert.ToInt32(Console.ReadLine());
 
+                
                 if (r != 0 && c != 0)
                 {
-                    Console.Write("Max number of Mines: ");
-                    m = Convert.ToInt32(Console.ReadLine());
-                }
-
-                //if rows and columns are not equal to 0, board is set up based on user input
-                if (r != 0 && c != 0) { 
                     b = new Board(r, c);
-                    b.SetUpBoard(m);
-                    board = b.GetBoard();
-                    b.PrintBoard();
+                    Console.WriteLine("Would you like to set up the board manually? (Y/N)");
+                    string ans = Console.ReadLine();
+
+                    //filling up the grid manually
+                    if (ans.Equals("Y", StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        bool userInputValid = false;
+                        do{
+                            userInputValid = b.SetUpBoardManually();
+                        } while (userInputValid != true);
+                        board = b.GetBoard();
+                    }
+
+                    //filling up the grid automatically
+                    else if (ans.Equals("N", StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        Console.WriteLine("Setting up the board automatically.");
+                        Console.Write("Enter max number of mines: ");
+                        m = Convert.ToInt32(Console.ReadLine());
+                        b.SetUpBoardAutomatically(m);
+                        board = b.GetBoard();
+                        b.PrintBoard();
+                    }
 
                     //array is traversed to count the number of neighbouring mines for each element
                     for (int i = 0; i < r; i++)
                     {
                         for (int j = 0; j < c; j++)
                         {
-                            if (board[i, j] != '*') { 
+                            if (board[i, j] != '*')
+                            {
                                 int mineCount = CountNeighbourMines(i, j);
                                 board[i, j] = (char)(mineCount + 48);
-                            }  
+                            }
                         }
                     }
 
                     boards.Add(board); //filling up list with boards that contain information about number of neighbouring mines
                 }
-
                 Console.WriteLine();
             } while (r != 0 && c != 0);
 
